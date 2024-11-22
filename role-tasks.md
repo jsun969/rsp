@@ -2,6 +2,8 @@
 
 ## Novice
 
+> Due **5 Jan**
+
 - [x] Read all the introductory chapters (first 86 pages) of CTCI.
 - [ ] Thoroughly read the first 13 chapters of ADM (don't do the exercises).
 - [ ] Implement in either C++ / Java / Python:
