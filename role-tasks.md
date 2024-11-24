@@ -7,7 +7,7 @@
 - [x] Read all the introductory chapters (first 86 pages) of CTCI.
 - [ ] Thoroughly read the first 13 chapters of ADM (don't do the exercises).
 - [ ] Implement in either C++ / Java / Python:
-  - [ ] A Linked List.
+  - [x] A Linked List.
   - [ ] A Binary Tree.
   - [ ] A Graph using an Adjacency List.
   - [ ] Depth First Search using recursion.
