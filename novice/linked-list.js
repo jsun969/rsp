@@ -8,7 +8,7 @@ class LinkedListNode {
 
 class LinkedList {
 	/**
-	 * @type {LinkedListNode}
+	 * @type {LinkedListNode | null}
 	 */
 	#head = null;
 	#isEmpty() {
