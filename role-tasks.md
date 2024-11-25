@@ -6,7 +6,20 @@
 
 - [x] Read all the introductory chapters (first 86 pages) of CTCI.
 - [ ] Thoroughly read the first 13 chapters of ADM (don't do the exercises).
-- [ ] Implement in either C++ / Java / Python:
+  - [x] Chapter 1
+  - [x] Chapter 2 (Skimmed)
+  - [x] Chapter 3 (Except War Stories)
+  - [ ] Chapter 4
+  - [ ] Chapter 5
+  - [ ] Chapter 6
+  - [ ] Chapter 7
+  - [ ] Chapter 8
+  - [ ] Chapter 9
+  - [ ] Chapter 10
+  - [ ] Chapter 11
+  - [ ] Chapter 12
+  - [ ] Chapter 13
+- [ ] Implement in ~~either C++ / Java / Python~~ JavaScript:
   - [x] A Linked List.
   - [ ] A Binary Tree.
   - [ ] A Graph using an Adjacency List.
