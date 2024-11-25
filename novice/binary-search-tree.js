@@ -83,6 +83,7 @@ class BinarySearchTree {
 		return true;
 	}
 	get min() {
+		if (!this.#root) return undefined;
 		let node = this.#root;
 		while (node.left) {
 			node = node.left;
@@ -90,13 +91,14 @@ class BinarySearchTree {
 		return node.data;
 	}
 	get max() {
+		if (!this.#root) return undefined;
 		let node = this.#root;
 		while (node.right) {
 			node = node.right;
 		}
 		return node.data;
 	}
-	#update(node, newNode) {
+	#updateFromParent(node, newNode) {
 		if (node.data < node.parent.data) {
 			node.parent.left = newNode;
 		} else {
@@ -107,6 +109,10 @@ class BinarySearchTree {
 	 * @param {number} value
 	 */
 	delete(value) {
+		if (this.#root.data === value) {
+			this.#root = null;
+			return;
+		}
 		// Find node
 		let node = this.#root;
 		while (node) {
@@ -130,7 +136,7 @@ class BinarySearchTree {
 				newNode = newNode.left;
 			}
 			// Unlink new node from its parent
-			this.#update(newNode, null);
+			this.#updateFromParent(newNode, null);
 			// Relink new node to new parent
 			newNode.parent = node.parent;
 			newNode.left = node.left;
@@ -144,12 +150,18 @@ class BinarySearchTree {
 			newNode.parent = node.parent;
 		}
 		// Update node
-		this.#update(node, newNode);
+		this.#updateFromParent(node, newNode);
 	}
 }
 
 const main = () => {
 	const tree = new BinarySearchTree();
+
+	tree.insert(100);
+	console.log(tree.traverse());
+	tree.delete(100);
+	console.log(tree.traverse());
+
 	tree.insert(6);
 	tree.insert(3);
 	tree.insert(8);
