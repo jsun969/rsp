@@ -24,7 +24,7 @@
   - [x] A Binary Tree.
   - [x] A Graph using an Adjacency List.
   - [ ] Depth First Search using recursion.
-  - [ ] Breadth First Search using a while loop.
+  - [x] Breadth First Search using a while loop.
 - [ ] Understand how these work and their big-O times:
   - [ ] Trie data structure.
   - [ ] Vector amortised time.
