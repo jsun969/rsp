@@ -42,6 +42,14 @@ class Graph {
 		}
 		return visited;
 	}
+	dfs(vertex, visited = []) {
+		visited.push(vertex);
+		this.#adjList
+			.get(vertex)
+			.filter((v) => !visited.includes(v))
+			.forEach((v) => this.dfs(v, visited));
+		return visited;
+	}
 }
 
 const main = () => {
@@ -64,6 +72,7 @@ const main = () => {
 	g2.addEdge(6, 8);
 	g2.print();
 	console.log(g2.bfs(0));
+	console.log(g2.dfs(0));
 };
 
 main();
