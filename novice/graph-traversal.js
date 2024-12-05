@@ -40,7 +40,7 @@ class Graph {
 				.filter((v) => !visited.includes(v));
 			queue.unshift(...newVertices.reverse());
 		}
-		console.log(visited);
+		return visited;
 	}
 }
 
@@ -63,7 +63,7 @@ const main = () => {
 	g2.addEdge(5, 7);
 	g2.addEdge(6, 8);
 	g2.print();
-	g2.bfs(0);
+	console.log(g2.bfs(0));
 };
 
 main();
