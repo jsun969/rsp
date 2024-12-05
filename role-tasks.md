@@ -22,7 +22,7 @@
 - [ ] Implement in ~~either C++ / Java / Python~~ JavaScript:
   - [x] A Linked List.
   - [x] A Binary Tree.
-  - [ ] A Graph using an Adjacency List.
+  - [x] A Graph using an Adjacency List.
   - [ ] Depth First Search using recursion.
   - [ ] Breadth First Search using a while loop.
 - [ ] Understand how these work and their big-O times:
