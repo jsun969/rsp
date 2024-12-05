@@ -9,30 +9,30 @@ class Graph {
 	/**
 	 * @type {Set<Vertex>}
 	 */
-	vertices = new Set();
+	#vertices = new Set();
 	/**
 	 * @type {Map<Vertex, Array<Vertex>>}
 	 */
-	adjList = new Map();
+	#adjList = new Map();
 	addVertex(value) {
 		const newVertex = new Vertex(value);
-		this.vertices.add(newVertex);
-		this.adjList.set(newVertex, []);
+		this.#vertices.add(newVertex);
+		this.#adjList.set(newVertex, []);
 	}
 	addEdge(src, dest) {
 		let srcVertex, destVertex;
-		for (const v of this.vertices) {
+		for (const v of this.#vertices) {
 			if (v.value === src) srcVertex = v;
 			if (v.value === dest) destVertex = v;
 		}
 		if (!srcVertex) throw new Error('Source Vertex Not Found');
 		if (!destVertex) throw new Error('Destination Vertex Not Found');
-		this.adjList.get(srcVertex).push(destVertex);
-		this.adjList.get(destVertex).push(srcVertex);
+		this.#adjList.get(srcVertex).push(destVertex);
+		this.#adjList.get(destVertex).push(srcVertex);
 	}
 	print() {
-		console.log(Array.from(this.vertices).map((v) => v.value));
-		for (const [k, v] of this.adjList) {
+		console.log(Array.from(this.#vertices).map((v) => v.value));
+		for (const [k, v] of this.#adjList) {
 			console.log(`${k.value}: -> ${v.map((e) => e.value).join(' -> ')}`);
 		}
 	}
