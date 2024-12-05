@@ -19,11 +19,11 @@
   - [ ] Chapter 11
   - [ ] Chapter 12
   - [ ] Chapter 13
-- [ ] Implement in ~~either C++ / Java / Python~~ JavaScript:
+- [x] Implement in ~~either C++ / Java / Python~~ JavaScript:
   - [x] A Linked List.
   - [x] A Binary Tree.
   - [x] A Graph using an Adjacency List.
-  - [ ] Depth First Search using recursion.
+  - [x] Depth First Search using recursion.
   - [x] Breadth First Search using a while loop.
 - [ ] Understand how these work and their big-O times:
   - [ ] Trie data structure.
