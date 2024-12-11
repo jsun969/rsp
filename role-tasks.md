@@ -14,7 +14,7 @@
   - [x] Chapter 6
   - [x] Chapter 7
   - [x] Chapter 8 (except 8.5 8.6)
-  - [ ] Chapter 9
+  - [x] Chapter 9 (? 9.6 9.7)
   - [ ] Chapter 10
   - [ ] Chapter 11
   - [ ] Chapter 12
