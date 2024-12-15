@@ -5,7 +5,7 @@
 > Due **5 Jan**
 
 - [x] Read all the introductory chapters (first 86 pages) of CTCI.
-- [ ] Thoroughly read the first 13 chapters of ADM (don't do the exercises).
+- [x] ADM
   - [x] Chapter 1
   - [x] Chapter 2 (Skimmed)
   - [x] Chapter 3 (Except War Stories)
@@ -15,10 +15,10 @@
   - [x] Chapter 7
   - [x] Chapter 8 (except 8.5 8.6)
   - [x] Chapter 9 (? 9.6 9.7)
-  - [ ] Chapter 10
-  - [ ] Chapter 11
-  - [ ] Chapter 12
-  - [ ] Chapter 13
+  - [x] Chapter 10
+  - [ ] ~~Chapter 11~~
+  - [ ] ~~Chapter 12~~
+  - [x] 2nd Chapter 9 (P&NP)
 - [x] Implement in ~~either C++ / Java / Python~~ JavaScript:
   - [x] A Linked List.
   - [x] A Binary Tree.
