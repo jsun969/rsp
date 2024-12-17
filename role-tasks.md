@@ -26,17 +26,19 @@
   - [x] Depth First Search using recursion.
   - [x] Breadth First Search using a while loop.
 - [ ] Understand how these work and their big-O times:
-  - [ ] Trie data structure.
+  - [x] Trie data structure.
   - [ ] Vector amortised time.
   - [ ] Bit Manipulation.
-  - [ ] Singleton Design Pattern.
-  - [ ] Factory Design Pattern.
-  - [ ] Union-Find data structure.
-  - [ ] Quick Select algorithm.
-  - [ ] Balanced Binary Search Tree (both AVL and Red-Black Trees).
-  - [ ] Minimum Spanning Tree algorithm.
-  - [ ] Dijkstra’s Shortest Path algorithm.
-  - [ ] Bellman-ford pathfinding algorithm.
+  - [x] Singleton Design Pattern.
+  - [x] Factory Design Pattern.
+  - [x] Union-Find data structure.
+  - [x] Quick Select algorithm.
+  - [ ] Balanced Binary Search Tree
+    - [x] Red black tree
+    - [ ] AVL tree
+  - [x] Minimum Spanning Tree algorithm.
+  - [x] Dijkstra’s Shortest Path algorithm.
+  - [x] Bellman-ford pathfinding algorithm.
 - [ ] Fill out the table on page 32 of CTCI about behavioural questions (use dot points).
 - [ ] Read all interview question introductions from CTCI, which are the texts beyond page 86 that explain how to answer questions related to each respective data structure or algorithm.
-- [ ] Completed a draft of your resume.
+- [x] Completed a draft of your resume.
