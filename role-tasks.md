@@ -39,6 +39,6 @@
   - [x] Minimum Spanning Tree algorithm.
   - [x] Dijkstra’s Shortest Path algorithm.
   - [x] Bellman-ford pathfinding algorithm.
-- [ ] Fill out the table on page 32 of CTCI about behavioural questions (use dot points).
+- [x] Fill out the table on page 32 of CTCI about behavioural questions (use dot points).
 - [ ] Read all interview question introductions from CTCI, which are the texts beyond page 86 that explain how to answer questions related to each respective data structure or algorithm.
 - [x] Completed a draft of your resume.
