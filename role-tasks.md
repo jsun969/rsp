@@ -33,9 +33,9 @@
   - [x] Factory Design Pattern.
   - [x] Union-Find data structure.
   - [x] Quick Select algorithm.
-  - [ ] Balanced Binary Search Tree
+  - [x] Balanced Binary Search Tree
     - [x] Red black tree
-    - [ ] AVL tree
+    - [x] AVL tree
   - [x] Minimum Spanning Tree algorithm.
   - [x] Dijkstra’s Shortest Path algorithm.
   - [x] Bellman-ford pathfinding algorithm.
