@@ -59,3 +59,36 @@ Find kth element
 
 - Partition like quick sort
 - Do partition until the pivot final position is the kth element
+
+## Design Pattern
+
+### Singleton Class
+
+```js
+class Restaurant {
+	static #instance = null;
+	constructor() {}
+	static getInstance() {
+		if (this.#instance == null) {
+			this.#instance = new Restaurant();
+		}
+		return this.#instance;
+	}
+}
+```
+
+### Factory Method
+
+```js
+class CardGame {
+	static createCardGame(type) {
+		if (type === 'poker') {
+			return new PokerGame();
+		}
+		if (type === 'black-jack') {
+			return new BlackJackGame();
+		}
+		return null;
+	}
+}
+```
