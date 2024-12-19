@@ -69,7 +69,7 @@ class Restaurant {
 	static #instance = null;
 	constructor() {}
 	static getInstance() {
-		if (this.#instance == null) {
+		if (this.#instance === null) {
 			this.#instance = new Restaurant();
 		}
 		return this.#instance;
@@ -91,4 +91,48 @@ class CardGame {
 		return null;
 	}
 }
+```
+
+## AVL Tree
+
+### Rotation
+
+```text
+      A
+     / \           B
+    B  Ar        /   \
+   / \    -->   C     A
+  C  Br        / \   / \
+ / \          Cl Cr Br Ar
+Cl Cr
+```
+
+```text
+  A
+ / \               B
+Al  B            /   \
+   / \    -->   A     C
+  Bl  C        / \   / \
+     / \      Al Bl Cl Cr
+    Cl Cr
+```
+
+```text
+    A             A
+   / \           / \           C
+  B  Ar         C  Ar        /   \
+ / \    -->    / \    -->   B     A
+Bl  C         B  Cr        / \   / \
+   / \       / \          Bl Cl Cr Ar
+  Cl Cr     Bl Cl
+```
+
+```text
+  A           A
+ / \         / \               C
+Al  B       Al  C            /   \
+   / \  -->    / \    -->   A     B
+  C  Br       Cl  B        / \   / \
+ / \             / \      Al Cl Cr Br
+Cl Cr           Cr Br
 ```
