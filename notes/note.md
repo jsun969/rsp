@@ -136,3 +136,14 @@ Al  B       Al  C            /   \
  / \             / \      Al Cl Cr Br
 Cl Cr           Cr Br
 ```
+
+## Bit Manipulation
+
+XOR: Different = true
+
+<https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators#bitwise_operators>
+
+```
+true && true
+true && false
+```
