@@ -33,9 +33,11 @@
 - Prim's:
   - Adjacency list and priority queue: $O((V+E)log(V))$
   - Adjacency matrix: $O(V^2)$
+  - Dense graph
 - Kruskal's: $O(Elog(E))$
-  - Union find
+  - Union-find
   - Not-connected graph
+  - Sparse graph
 
 ### Shortest Path
 
@@ -51,6 +53,24 @@
 
 - Floyd-Warshall: $O(V^3)$
 
+### Union-Find
+
+```text
+       4
+      / \     3
+1    6   2    |
+         |    5
+         7
+```
+
+| 1   | 2   | 3   | 4   | 5   | 6   | 7   |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1   | 4   | 3   | 4   | 3   | 4   | 2   |
+
+Complexity: $O(log(n))$
+
+Complexity with optimism (path compression & union by rank): $O(\alpha(N))$ (inverse Ackermann function (very small, nearly constant))
+
 ## Quick Select
 
 <https://youtu.be/XEmy13g1Qxc?si=gd3Q5S-cBqi-863D>
@@ -59,6 +79,22 @@ Find kth element
 
 - Partition like quick sort
 - Do partition until the pivot final position is the kth element
+
+### Median of Medians
+
+1. Original Array `[12,3,5,7,19,26,14,21,2,8,6,10]`
+2. Divide array into groups of 5 elements
+   - Group 1: `[12,3,5,7,19]`
+   - Group 2: `[26,14,21,2,8]`
+   - Group 3: `[6,10]`
+3. Find medians of each group `[7,14,10]`
+4. Find the median of the medians `10`
+5. Use `10` as the pivot
+
+### Time Complexities
+
+- Best/Average Case: $O(N)$
+- Worst Case: $O(N^2)$
 
 ## Design Pattern
 
@@ -142,8 +178,3 @@ Cl Cr           Cr Br
 XOR: Different = true
 
 <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators#bitwise_operators>
-
-```
-true && true
-true && false
-```
