@@ -80,6 +80,19 @@ Find kth element
 - Partition like quick sort
 - Do partition until the pivot final position is the kth element
 
+### Choosing Pivot
+
+> ADM(3rd) P508  
+> Works for quick sort as well
+
+- **Use randomization** - By randomly permuting the keys before sorting, you can eliminate the potential embarrassment of quadratic-time behavior on nearly sorted data.
+
+- **Median of three** - For your pivot element, use the median of the first, last, and middle elements of the array to increase the likelihood of partitioning the array into roughly equal pieces. Experiments suggest using a larger sample on big subarrays and a smaller sample on small ones.
+
+- **Leave small subarrays for insertion sort** - Terminating the quicksort recursion and switching to insertion sort makes sense when the subarrays get small, say fewer than 20 elements. You should experiment to identify the best switch point for your implementation.
+
+- **Do the smaller partition first** - You can minimize runtime memory by processing the smaller partition before the larger one. Since each successive stored call is at most half as large as the previous one, only $O(log(n))$ stack space is needed.
+
 ### Median of Medians
 
 1. Original Array `[12,3,5,7,19,26,14,21,2,8,6,10]`
