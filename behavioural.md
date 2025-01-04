@@ -5,7 +5,14 @@
 - Second year computer science student from uni of adelaide
 - Love problem solving and programming
 - Learnt programming (mostly web dev) since high school
+  - TypeScript, React, NextJS
+- Did a lot of personal projects
 - Contributed to some well-known open source projects on github
-- Did a lot of personal projects and leading some projects in the uni cs club
+  - Such as: react hook form, ant design, astro
+  - Did rhf browser extension, rhf antd (>2k downloads/week npm)
+- Currently leading some projects in the uni cs club
+  - Working on mytimetable (in react and pdnd) which is widely used by uni students
 - Had fullstack internship after high school before went to the uni
-- Besides programming, I like DIY hardware stuffs (portable monitor for laptop)
+  - Made a web game called isthatai using nextjs and framer motion
+- Besides programming, I like DIY hardware stuffs
+  - portable monitor for laptop
