@@ -11,7 +11,8 @@
   - Such as: react hook form, ant design, astro
   - Did rhf browser extension, rhf antd (>2k downloads/week npm)
 - Currently leading some projects in the uni cs club
-  - Working on mytimetable (in react and pdnd) which is widely used by uni students
+  - Working on mytimetable which is widely used by uni students
+    - TypeScript, React, pdnd to provide a better user experience
 - Had fullstack internship after high school before went to the uni
   - Made a web game called isthatai using nextjs and framer motion
 - Besides programming, I like DIY hardware stuffs
