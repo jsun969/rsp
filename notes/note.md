@@ -71,6 +71,42 @@ Complexity: $O(log(n))$
 
 Complexity with optimism (path compression & union by rank): $O(\alpha(N))$ (inverse Ackermann function (very small, nearly constant))
 
+```js
+class UnionFind {
+	#par = []; // Parents
+	#rank = []; // Depth of each tree
+	constructor(n) {
+		this.#par = new Array(n).fill(0).map((_, i) => i);
+		this.#rank = new Array(n).fill(1);
+	}
+	find(x) {
+		while (x !== this.#par[x]) {
+			// Path compression
+			this.#par[x] = this.#par[this.#par[x]];
+			x = this.#par[x];
+		}
+		return x;
+	}
+	union(x, y) {
+		const px = this.find(x),
+			py = this.find(y);
+		if (px === py) {
+			return false;
+		}
+		// Union by rank
+		if (this.#rank[px] > this.#rank[py]) {
+			this.#par[py] = px;
+		} else if (this.#rank[px] < this.#rank[py]) {
+			this.#par[px] = py;
+		} else {
+			this.#par[py] = px;
+			this.#rank[px]++;
+		}
+		return true;
+	}
+}
+```
+
 ## Quick Select
 
 <https://youtu.be/XEmy13g1Qxc?si=gd3Q5S-cBqi-863D>
