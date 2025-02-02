@@ -49,3 +49,7 @@ const g = twoWayGenerator();
 console.log(g.next()); // { value: 'Give me a number', done: false }
 console.log(g.next(10)); // Received: 10, { value: 20, done: false }
 ```
+
+## Method Chaining
+
+return `this`
