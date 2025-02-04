@@ -101,11 +101,51 @@ console.log(wm); // { } empty
 | Independent scripts (e.g., analytics)  | ❌ No (not immediate)           | ✅ Yes (executes ASAP)                |
 | Performance optimization               | ✅ Yes (does not block parsing) | ✅ Yes (downloads in parallel)        |
 
+- Both downloaded while HTML parsing
 - Use `defer` for scripts that interact with the DOM or require execution order.
 - Use `async` for independent scripts like analytics or ads.
 - Avoid using both `defer` and `async` together on the same script.
 
+### Web Worker
+
+a way to create another thread for heavy computation
+
+```js
+// main.js
+const worker = new Worker('worker.js');
+worker.postMessage('Hello, worker!');
+
+worker.onmessage = function (event) {
+	console.log('Message from worker:', event.data);
+};
+
+// worker.js
+onmessage = function (event) {
+	console.log('Message from main script:', event.data);
+	postMessage('Hello, main script!');
+};
+```
+
+`Promise` actually just runs the code later while web worker really creates another thread (based on cpu).
+
+#### Other things
+
+like web worker which can create another thread
+
+- Shared Worker
+- Service Worker
+- Atomics + SharedArrayBuffer
+- WebAssembly + threads(in rust/cpp etc.)
+
 ## React
+
+## Why you use react?
+
+- Component
+- Virtual DOM and efficient updates
+- Ecosystem and Community
+- JSX
+- **Declarative**: You describe the desired state of your UI based on data, and React handles updating the actual DOM efficiently.
 
 ### React Lifecycle
 
