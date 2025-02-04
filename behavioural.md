@@ -31,6 +31,7 @@
   - held workshop to teach students concepts like git and react
   - mentor students on contributing open source projects
 
+- love making scripts to solve real-world problems
 - Besides programming, I like DIY hardware stuffs
   - portable monitor for laptop
 
