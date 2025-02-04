@@ -74,6 +74,24 @@ Object.is(NaN, NaN); // true
 Object.is(+0, -0); // false
 ```
 
+### `Map` vs `WeakMap`
+
+```js
+const m = new Map();
+let key = { obj: 'key' };
+m.set(key, 'value');
+key = undefined; // deleted by garbage collector
+console.log(m); // { { key: 'value' } }
+```
+
+```js
+const wm = new WeakMap();
+let key = { obj: 'key' };
+wm.set(key, 'value');
+key = undefined; // deleted by garbage collector
+console.log(wm); // { } empty
+```
+
 ## React
 
 ### React Lifecycle
