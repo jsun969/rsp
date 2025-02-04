@@ -92,6 +92,19 @@ key = undefined; // deleted by garbage collector
 console.log(wm); // { } empty
 ```
 
+## `defer` vs `async` for script tag
+
+| Use Case                               | `defer`                         | `async`                               |
+| -------------------------------------- | ------------------------------- | ------------------------------------- |
+| Scripts that modify the DOM            | ✅ Yes                          | ❌ No (might run before DOM is ready) |
+| Scripts that depend on execution order | ✅ Yes (executes in order)      | ❌ No (order is not guaranteed)       |
+| Independent scripts (e.g., analytics)  | ❌ No (not immediate)           | ✅ Yes (executes ASAP)                |
+| Performance optimization               | ✅ Yes (does not block parsing) | ✅ Yes (downloads in parallel)        |
+
+- Use `defer` for scripts that interact with the DOM or require execution order.
+- Use `async` for independent scripts like analytics or ads.
+- Avoid using both `defer` and `async` together on the same script.
+
 ## React
 
 ### React Lifecycle
