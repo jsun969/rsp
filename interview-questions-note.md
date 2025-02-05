@@ -92,7 +92,7 @@ key = undefined; // deleted by garbage collector
 console.log(wm); // { } empty
 ```
 
-## `defer` vs `async` for script tag
+### `defer` vs `async` for script tag
 
 | Use Case                               | `defer`                         | `async`                               |
 | -------------------------------------- | ------------------------------- | ------------------------------------- |
@@ -137,9 +137,42 @@ like web worker which can create another thread
 - Atomics + SharedArrayBuffer
 - WebAssembly + threads(in rust/cpp etc.)
 
+### Immutable objects
+
+- `Object.freeze` (nested object can still be modified)
+- `Object.defineProperty` with `writable: false` and `configurable: false`
+- `Object.preventExtensions` (prevent new props)
+- `Object.seal`
+
+### Iterating over objects and arrays
+
+- `for`
+- `for...in`
+- `for...of`
+- `Object.keys`
+- `Object.entries`
+- `Object.getOwnPropertyNames` - returns an array of keys
+- `arr.entries` with `for...of` - [index, value]
+
+### `load` vs `DOMContentLoaded`
+
+- `load` - fires when the entire page, including all dependent resources such as stylesheets and images, has finished loading
+- `DOMContentLoaded` - fires when the initial HTML document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading
+- `defer` - before `DOMContentLoaded`, but only after HTML parsing finishes.
+
+## CSS
+
+### `@media` other than `screen`
+
+tldr: printer
+
+- `all`: for all media type devices
+- `print`: for printers
+- `screen`: for computer screens, tablets, smart-phones etc.
+
 ## React
 
-## Why you use react?
+### Why you use react?
 
 - Component
 - Virtual DOM and efficient updates
